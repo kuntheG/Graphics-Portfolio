@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio for a multidisciplinary creative specializing in graphic design, video editing, media tech coaching, and music ministry.">
+    <title>Rohmec Global Touch | Creative Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
+
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ===== Navbar ===== -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#hero"><img src="img/image.png" alt="Rohmec Global Touch Logo" class="nav-logo">Rohmec<span>Global Touch</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems" aria-controls="navItems" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navItems">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== Hero ===== -->
+    <header id="hero" class="hero d-flex align-items-center">
+        <!-- Animated background shapes -->
+        <div class="hero-shapes">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+            <div class="hero-shape hero-shape-3"></div>
+            <div class="hero-shape hero-shape-4"></div>
+        </div>
+        <!-- Floating geometric particles -->
+        <div class="hero-particle hero-particle-1"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg></div>
+        <div class="hero-particle hero-particle-2"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/></svg></div>
+        <div class="hero-particle hero-particle-3"><svg viewBox="0 0 24 24"><polygon points="12,2 22,8.5 22,15.5 12,22 2,15.5 2,8.5"/></svg></div>
+        <div class="hero-particle hero-particle-4"><svg viewBox="0 0 24 24"><polygon points="12,2 22,22 2,22"/></svg></div>
+        <div class="hero-particle hero-particle-5"><svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,22 12,18 5,22 7,14 2,9 9,9"/></svg></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <p class="hero-tag mb-3" data-reveal>Rohmec Global Touch</p>
+                    <h1 class="hero-title mb-4" data-reveal>
+                        Hi, I'm Olorunobinu Busayo Timothy
+                    </h1>
+                    <p class="hero-subtitle mb-5" data-reveal>
+                        <span id="typed-text"></span><span class="cursor">|</span>
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start flex-wrap">
+                        <a href="#work" class="btn btn-primary-custom">View My Work</a>
+                        <a href="#contact" class="btn btn-outline-custom">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block text-center">
+                    <div class="hero-avatar">
+                        <div class="hero-avatar-inner">
+                            <img src="img/owner.jpg" alt="Olorunobinu Busayo Timothy" class="hero-avatar-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <a href="#services"><span class="mouse-icon"><span class="mouse-wheel"></span></span></a>
+        </div>
+    </header>
+
+    <!-- ===== Services ===== -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <div class="text-center mb-5" data-reveal>
+                <span class="section-subtitle">What I Do</span>
+                <h2 class="section-title">My <span>Services</span></h2>
+                <div class="section-divider mx-auto"></div>
+                <p class="text-muted col-lg-8 mx-auto">
+                    Bringing creativity and technical expertise across four disciplines to help brands, ministries, and individuals tell their stories.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Graphic Design -->
+                <div class="col-md-6 col-lg-3" data-reveal data-reveal-delay="1">
+                    <div class="service-card" data-color="violet">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                                <path d="M2 2l7.586 7.586"/>
+                                <circle cx="11" cy="11" r="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Graphic Design</h3>
+                        <p class="service-desc">
+                            Logos, brand identities, flyers, social media creatives, and print designs that make a lasting impression.
+                        </p>
+                        <ul class="service-list">
+                            <li>Brand Identity</li>
+                            <li>Social Media Graphics</li>
+                            <li>Print &amp; Flyers</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Video Editing -->
+                <div class="col-md-6 col-lg-3" data-reveal data-reveal-delay="2">
+                    <div class="service-card" data-color="amber">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="23 7 16 12 23 17 23 7"/>
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Video Editing</h3>
+                        <p class="service-desc">
+                            Professional video content editing — from promotional videos and events to social media reels and YouTube content.
+                        </p>
+                        <ul class="service-list">
+                            <li>Promotional Videos</li>
+                            <li>Event Coverage</li>
+                            <li>Social Reels</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Media Tech Coaching -->
+                <div class="col-md-6 col-lg-3" data-reveal data-reveal-delay="3">
+                    <div class="service-card" data-color="teal">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 7h-9"/>
+                                <path d="M14 17H5"/>
+                                <circle cx="17" cy="17" r="3"/>
+                                <circle cx="7" cy="7" r="3"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Media Tech Coaching</h3>
+                        <p class="service-desc">
+                            One-on-one and group coaching on media technology tools, content creation workflows, and digital strategy.
+                        </p>
+                        <ul class="service-list">
+                            <li>Content Workflows</li>
+                            <li>Software Training</li>
+                            <li>Digital Strategy</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Music Ministry -->
+                <div class="col-md-6 col-lg-3" data-reveal data-reveal-delay="4">
+                    <div class="service-card" data-color="coral">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 18V5l12-2v13"/>
+                                <circle cx="6" cy="18" r="3"/>
+                                <circle cx="18" cy="16" r="3"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Music Ministry</h3>
+                        <p class="service-desc">
+                            Spirit-filled music ministry — worship leading, choir direction, and music production for churches and events.
+                        </p>
+                        <ul class="service-list">
+                            <li>Worship Leading</li>
+                            <li>Choir Direction</li>
+                            <li>Music Production</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Work / Portfolio ===== -->
+    <section id="work" class="section work-section">
+        <div class="container">
+            <div class="text-center mb-5" data-reveal>
+                <span class="section-subtitle">Recent Projects</span>
+                <h2 class="section-title">Featured <span>Work</span></h2>
+                <div class="section-divider mx-auto"></div>
+                <p class="text-muted col-lg-8 mx-auto">
+                    A selection of projects spanning graphic design, video editing, and music production.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Featured 1 -->
+                <div class="col-md-6 col-lg-4" data-reveal data-reveal-delay="1">
+                    <div class="work-card">
+                        <div class="work-collage work-collage-3">
+                            <img src="img/ABTV6512.JPG" alt="Brand Identity">
+                            <img src="img/AMBE3728.JPG" alt="Branding">
+                            <img src="img/AQDU8779.JPG" alt="Visual Design">
+                        </div>
+                        <div class="work-card-body">
+                            <span class="work-tag-inline">Graphic Design</span>
+                            <h4 class="work-name-body">Brand Identity Series</h4>
+                            <p class="work-cat-body">Logo &amp; Visual Identity</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured 2 -->
+                <div class="col-md-6 col-lg-4" data-reveal data-reveal-delay="2">
+                    <div class="work-card">
+                        <div class="work-collage work-collage-3">
+                            <img src="img/BCMC8888.JPG" alt="Poster">
+                            <img src="img/BLYQ4052.JPG" alt="Flyer">
+                            <img src="img/ESPD2457.JPG" alt="Print Design">
+                        </div>
+                        <div class="work-card-body">
+                            <span class="work-tag-inline">Graphic Design</span>
+                            <h4 class="work-name-body">Flyers &amp; Posters</h4>
+                            <p class="work-cat-body">Print &amp; Digital Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured 3 -->
+                <div class="col-md-6 col-lg-4" data-reveal data-reveal-delay="3">
+                    <div class="work-card">
+                        <div class="work-collage work-collage-3">
+                            <img src="img/NIKN2908.JPG" alt="Church Media">
+                            <img src="img/NTKM1678.JPG" alt="Worship Graphic">
+                            <img src="img/OZJH8790.JPG" alt="Ministry Design">
+                        </div>
+                        <div class="work-card-body">
+                            <span class="work-tag-inline">Graphic Design</span>
+                            <h4 class="work-name-body">Church &amp; Ministry Media</h4>
+                            <p class="work-cat-body">Worship &amp; Ministry Graphics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View all work button -->
+            <div class="text-center mt-5" data-reveal>
+                <a href="work.html" class="btn btn-primary-custom px-5">View All Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Stats strip ===== -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-6 col-lg-3">
+                    <h3 class="stat-number" data-target="150">0</h3>
+                    <p class="stat-label">Projects Completed</p>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h3 class="stat-number" data-target="80">0</h3>
+                    <p class="stat-label">Happy Clients</p>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h3 class="stat-number" data-target="5">0</h3>
+                    <p class="stat-label">Years Experience</p>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h3 class="stat-number" data-target="4">0</h3>
+                    <p class="stat-label">Disciplines</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5" data-reveal="left">
+                    <div class="about-image">
+                        <div class="about-image-inner">
+                            <img src="img/owner.jpg" alt="Olorunobinu Busayo Timothy" class="about-avatar-img">
+                        </div>
+                        <div class="about-badge">
+                            <span>5+ Years</span>
+                            <small>Experience</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-reveal="right">
+                    <span class="section-subtitle">Get To Know Me</span>
+                    <h2 class="section-title mb-3">About <span>Me</span></h2>
+                    <div class="section-divider"></div>
+                    <p class="about-text">
+                        I'm <strong>Olorunobinu Busayo Timothy</strong>, the creative mind behind
+                        <strong>Rohmec Global Touch</strong>. With a passion for visual storytelling and
+                        a heart for ministry, I help brands and individuals communicate their message
+                        through impactful design, compelling video content, and spirit-filled music.
+                    </p>
+                    <p class="about-text">
+                        From crafting brand identities to coaching aspiring creatives, my mission is to
+                        blend creativity with purpose — producing work that not only looks good but
+                        also connects and inspires.
+                    </p>
+                    <div class="row mt-4 g-3 about-skills">
+                        <div class="col-sm-6">
+                            <div class="skill-bar">
+                                <div class="skill-info d-flex justify-content-between">
+                                    <span>Graphic Design</span><span>95%</span>
+                                </div>
+                                <div class="skill-track"><div class="skill-fill" data-width="95%"></div></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="skill-bar">
+                                <div class="skill-info d-flex justify-content-between">
+                                    <span>Video Editing</span><span>88%</span>
+                                </div>
+                                <div class="skill-track"><div class="skill-fill" data-width="88%"></div></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="skill-bar">
+                                <div class="skill-info d-flex justify-content-between">
+                                    <span>Media Tech Coaching</span><span>90%</span>
+                                </div>
+                                <div class="skill-track"><div class="skill-fill" data-width="90%"></div></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="skill-bar">
+                                <div class="skill-info d-flex justify-content-between">
+                                    <span>Music Ministry</span><span>92%</span>
+                                </div>
+                                <div class="skill-track"><div class="skill-fill" data-width="92%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary-custom mt-4">Let's Work Together</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="text-center mb-5" data-reveal>
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact <span>Me</span></h2>
+                <div class="section-divider mx-auto"></div>
+                <p class="text-muted col-lg-8 mx-auto">
+                    Have a project in mind or want to collaborate? Let's create something great together.
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Contact info -->
+                <div class="col-lg-5" data-reveal="left">
+                    <div class="contact-info-wrap">
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h5>Email</h5>
+                                <a href="mailto:olorunobinutimothy@gmail.com">olorunobinutimothy@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h5>Phone</h5>
+                                <a href="tel:+2348149019801">0814 901 9801 (Hotline)</a><br>
+                                <a href="tel:+2349060083439">0906 008 3439 (Business)</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h5>Location</h5>
+                                <p>Nigeria</p>
+                            </div>
+                        </div>
+                        <div class="contact-socials">
+                            <a href="https://www.instagram.com/royalhomemedica" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                            <a href="https://www.facebook.com/Royal-Home-Medica" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                            <a href="https://www.tiktok.com/@olorunobinutimoth" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact form -->
+                <div class="col-lg-7" data-reveal="right">
+                    <form class="contact-form" id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control custom-input" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control custom-input" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control custom-input" id="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control custom-input" id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary-custom w-100">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <a class="footer-brand" href="#hero">Rohmec <span>Global Touch</span></a>
+                    <p class="footer-tagline">Creative excellence with purpose.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-nav">
+                        <a href="#hero">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="service.html">Services</a>
+                        <a href="work.html">Work</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <p class="footer-copy text-center">&copy; <span id="year"></span> Rohmec Global Touch. All rights reserved. &nbsp;|&nbsp; Built by <a href="#" target="_blank" rel="noopener" class="footer-dev-link">Kun Devs</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        // ===== Typing effect for hero subtitle =====
+        const phrases = [
+            'Graphic Design \u00B7 Video Editing \u00B7 Media Tech Coaching \u00B7 Music Ministry'
+        ];
+        const typedEl = document.getElementById('typed-text');
+        let phraseIdx = 0, charIdx = 0, isDeleting = false;
+
+        function typeLoop() {
+            const current = phrases[phraseIdx];
+            if (!isDeleting) {
+                typedEl.textContent = current.substring(0, charIdx + 1);
+                charIdx++;
+                if (charIdx === current.length) {
+                    setTimeout(() => { isDeleting = true; typeLoop(); }, 3000);
+                    return;
+                }
+                setTimeout(typeLoop, 50);
+            } else {
+                typedEl.textContent = current.substring(0, charIdx - 1);
+                charIdx--;
+                if (charIdx === 0) {
+                    isDeleting = false;
+                    phraseIdx = (phraseIdx + 1) % phrases.length;
+                    setTimeout(typeLoop, 500);
+                    return;
+                }
+                setTimeout(typeLoop, 25);
+            }
+        }
+        typeLoop();
+
+        // ===== Navbar scroll effect =====
+        const nav = document.getElementById('mainNav');
+        const scrollProgress = document.getElementById('scrollProgress');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+            // Scroll progress bar
+            const scrollTop = window.scrollY;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const pct = (scrollTop / docHeight) * 100;
+            scrollProgress.style.width = pct + '%';
+        });
+
+        // ===== Scroll reveal animations =====
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal-in');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(el));
+
+        // ===== Work filter =====
+        const filterBtns = document.querySelectorAll('.work-filter-btn');
+        const workItems = document.querySelectorAll('.work-item');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+                workItems.forEach(item => {
+                    if (filter === 'all' || item.dataset.category === filter) {
+                        item.style.display = '';
+                        setTimeout(() => item.classList.add('show'), 10);
+                    } else {
+                        item.classList.remove('show');
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // ===== Animate skill bars when in view =====
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const fills = entry.target.querySelectorAll('.skill-fill');
+                    fills.forEach(f => f.style.width = f.dataset.width);
+                    skillObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+        document.querySelectorAll('.about-skills').forEach(el => skillObserver.observe(el));
+
+        // ===== Animated stat counters =====
+        const statObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.querySelectorAll('.stat-number').forEach(stat => {
+                        const target = +stat.dataset.target;
+                        let current = 0;
+                        const step = Math.max(1, Math.ceil(target / 40));
+                        const timer = setInterval(() => {
+                            current += step;
+                            if (current >= target) {
+                                current = target;
+                                clearInterval(timer);
+                            }
+                            stat.textContent = current + '+';
+                        }, 40);
+                    });
+                    statObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.4 });
+        document.querySelectorAll('.stats-section').forEach(el => statObserver.observe(el));
+
+        // ===== Contact form submit =====
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = this.querySelector('button[type="submit"]');
+            const original = btn.textContent;
+
+            const name    = document.getElementById('name').value.trim();
+            const email   = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            const text = `Hello Rohmec Global Touch! 👋\n\n*Name:* ${name}\n*Email:* ${email}\n*Subject:* ${subject}\n\n*Message:*\n${message}`;
+            const whatsappURL = `https://wa.me/2349060083439?text=${encodeURIComponent(text)}`;
+
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                window.open(whatsappURL, '_blank');
+                btn.textContent = 'Message Sent!';
+                setTimeout(() => {
+                    btn.textContent = original;
+                    btn.disabled = false;
+                    this.reset();
+                }, 2000);
+            }, 800);
+        });
+
+        // ===== Auto year =====
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
