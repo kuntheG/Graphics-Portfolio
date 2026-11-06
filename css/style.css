@@ -585,6 +585,12 @@ h6 {
 }
 
 /* ---------- Responsive ---------- */
+
+/* Global overflow fix */
+html {
+  overflow-x: hidden;
+}
+
 @media (max-width: 991px) {
   .custom-nav.scrolled {
     background: rgba(255, 255, 255, 0.97);
@@ -611,6 +617,18 @@ h6 {
   .custom-nav.scrolled .navbar-toggler {
     border-color: rgba(0, 0, 0, 0.2);
   }
+
+  /* CTA box wrap on tablet */
+  .cta-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Page hero text — don't exceed container */
+  .page-hero-title,
+  .page-hero-text {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -623,6 +641,79 @@ h6 {
   }
   .section {
     padding: 4rem 0;
+  }
+
+  /* Hero shapes — shrink and clip so they don't overflow */
+  .hero-shapes,
+  .hero {
+    overflow: hidden;
+  }
+  .hero-shape-1 { width: 140px; height: 140px; right: 0; }
+  .hero-shape-2 { width: 120px; height: 120px; left: 0; }
+  .hero-shape-3 { width: 90px;  height: 90px;  left: 40%; }
+  .hero-shape-4 { width: 80px;  height: 80px;  right: 5%; }
+
+  /* Hide floating particles on mobile — not readable at small size */
+  .hero-particle { display: none; }
+
+  /* Page hero padding tighter on mobile */
+  .page-hero {
+    padding: 7rem 0 3.5rem;
+  }
+
+  /* Panel in page hero — full width */
+  .page-hero-panel {
+    margin-top: 1.5rem;
+  }
+
+  /* CTA box stack on mobile */
+  .cta-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+    gap: 1.2rem;
+  }
+
+  /* Pricing image — constrain height */
+  .pricing-img {
+    max-height: 360px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  /* Work collage — reduce aspect ratio on mobile */
+  .work-collage {
+    aspect-ratio: 3 / 2;
+  }
+
+  /* Stat numbers — smaller on mobile */
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  /* About image — constrain on mobile */
+  .about-image-inner {
+    width: 260px;
+  }
+
+  /* Insight card metric row — allow wrap */
+  .metric-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+  .metric-row strong {
+    font-size: 1.5rem;
+  }
+
+  /* Contact form padding */
+  .contact-form {
+    padding: 1.5rem 1rem;
+  }
+
+  /* Footer nav wrap */
+  .footer-nav {
+    gap: 0.8rem;
+    font-size: 0.8rem;
   }
 }
 
